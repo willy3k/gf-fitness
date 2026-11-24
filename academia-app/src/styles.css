@@ -1,11 +1,14 @@
 :root {
-  --bg: #0b0b0c;
-  --card: #161618;
-  --line: #2a2a2e;
-  --text: #f4f4f5;
-  --muted: #9a9aa2;
-  --acc: #c6ff3d;
-  --acc-ink: #0b0b0c;
+--bg: #04070c;
+  --card: #0c121c;
+  --line: #1c2840;
+  --text: #eef2f7;
+  --silver: #dedcd8;
+  --muted: #8b97ab;
+  --blue: #2a58b8;
+  --acc: #5cc8f2;
+  --acc-2: #2f6fd6;
+  --acc-ink: #04101a;
   --ok: #1fa85a;
   --bad: #e5484d;
   --radius: 14px;
