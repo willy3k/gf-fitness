@@ -208,20 +208,6 @@ create policy acessos_staff on acessos
   for all to authenticated using (is_staff()) with check (is_staff());
 
 -- ---------------------------------------------------------------------
--- Privilégios (necessários além das policies de RLS)
--- ---------------------------------------------------------------------
-grant usage on schema public to anon, authenticated;
-
-grant insert on table public.leads to anon, authenticated;
-grant select, update, delete on table public.leads to authenticated;
-
-grant select on table public.staff to authenticated;
-grant select on table public.alunos_situacao to authenticated;
-grant select, insert, update, delete on table public.alunos to authenticated;
-grant select on table public.pagamentos to authenticated;
-grant select, insert, update, delete on table public.acessos to authenticated;
-
--- ---------------------------------------------------------------------
 -- Depois de criar seu usuário em Authentication > Users, cadastre-o na equipe:
 --
 --   insert into staff (user_id, nome, papel)

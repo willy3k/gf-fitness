@@ -58,17 +58,11 @@ export default function PreAgendamento() {
 
     if (error) {
       setEstado('idle')
-      console.error('Erro ao salvar lead:', error)
       if (error.code === '23505') {
         setEstado('ok') // WhatsApp já cadastrado: mesma mensagem de sucesso
         return
       }
-      const detalhe = [error.code, error.message].filter(Boolean).join(' - ')
-      setErro(
-        detalhe
-          ? `Não foi possível enviar agora. Tente novamente em instantes. (${detalhe})`
-          : 'Não foi possível enviar agora. Tente novamente em instantes.',
-      )
+      setErro('Não foi possível enviar agora. Tente novamente em instantes.')
       return
     }
     setEstado('ok')
