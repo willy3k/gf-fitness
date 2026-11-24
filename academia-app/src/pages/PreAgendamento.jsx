@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import { supabase } from '../lib/supabase'
 import { dateBR, hojeISO, maskWhats, onlyDigits } from '../lib/format'
+import logo from '../assets/logo.png'
 
-const NOME = import.meta.env.VITE_NOME_ACADEMIA || 'Nossa Academia'
+const NOME = import.meta.env.VITE_NOME_ACADEMIA || 'GF Fitness'
 const ABERTURA = import.meta.env.VITE_DATA_ABERTURA || ''
 
 const OBJETIVOS = ['Emagrecer', 'Ganhar massa', 'Condicionamento', 'Saúde e bem-estar', 'Reabilitação', 'Outro']
@@ -76,21 +77,24 @@ export default function PreAgendamento() {
   return (
     <div className="landing">
       <section className="hero">
-        <div className="container">
-          <span className="tag">Pré-abertura</span>
-          <h1>{NOME}</h1>
-          <p className="lead">
-            Garanta seu lugar na inauguração{ABERTURA ? <> em <strong>{dateBR(ABERTURA)}</strong></> : null}.
-            Agende sua visita, conheça a estrutura e aproveite condições exclusivas de pré-abertura.
-          </p>
-          <a href="#agendar" className="btn">Quero agendar minha visita</a>
+        <div className="container hero-grid">
+          <div>
+            <span className="tag">PRÉ-ABERTURA</span>
+            <h1>{NOME}</h1>
+            <p className="lead">
+              Garanta seu lugar na inauguração{ABERTURA ? <> em <strong>{dateBR(ABERTURA)}</strong></> : null}.
+              Agende sua visita, conheça a estrutura e aproveite condições exclusivas de pré-abertura.
+            </p>
+            <a href="#agendar" className="btn">Quero agendar minha visita</a>
+          </div>
+          <img className="hero-logo" src={logo} alt={`Logo ${NOME}`} width="260" height="260" />
         </div>
       </section>
 
       <section className="container beneficios">
-        <div className="card"><h3>Equipamentos novos</h3><p className="muted">Musculação e funcional com estrutura completa.</p></div>
-        <div className="card"><h3>Avaliação inicial</h3><p className="muted">Entenda seu ponto de partida e defina metas reais.</p></div>
-        <div className="card"><h3>Condição de lançamento</h3><p className="muted">Quem se pré-agenda recebe a oferta antes de todo mundo.</p></div>
+        <div className="card"><h3>EQUIPAMENTOS NOVOS</h3><p className="muted">Musculação e funcional com estrutura completa.</p></div>
+        <div className="card"><h3>AVALIAÇÃO INICIAL</h3><p className="muted">Entenda seu ponto de partida e defina metas reais.</p></div>
+        <div className="card"><h3>CONDIÇÃO DE LANÇAMENTO</h3><p className="muted">Quem se pré-agenda recebe a oferta antes de todo mundo.</p></div>
       </section>
 
       <section id="agendar" className="container form-wrap">

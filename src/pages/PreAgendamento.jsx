@@ -73,9 +73,8 @@ export default function PreAgendamento() {
       <section className="hero">
         <div className="container hero-grid">
           <div>
-            <span className="tag">Pré-abertura</span>
+            <span className="tag">PRÉ-ABERTURA</span>
             <h1>{NOME}</h1>
-            <h2>holaaaa</h2>
             <p className="lead">
               Garanta seu lugar na inauguração{ABERTURA ? <> em <strong>{dateBR(ABERTURA)}</strong></> : null}.
               Agende sua visita, conheça a estrutura e aproveite condições exclusivas de pré-abertura.
@@ -87,9 +86,9 @@ export default function PreAgendamento() {
       </section>
 
       <section className="container beneficios">
-        <div className="card"><h3>Equipamentos novos</h3><p className="muted">Musculação e funcional com estrutura completa.</p></div>
-        <div className="card"><h3>Avaliação inicial</h3><p className="muted">Entenda seu ponto de partida e defina metas reais.</p></div>
-        <div className="card"><h3>Condição de lançamento</h3><p className="muted">Quem se pré-agenda recebe a oferta antes de todo mundo.</p></div>
+        <div className="card"><h3>EQUIPAMENTOS NOVOS</h3><p className="muted">Musculação e funcional com estrutura completa.</p></div>
+        <div className="card"><h3>AVALIAÇÃO INICIAL</h3><p className="muted">Entenda seu ponto de partida e defina metas reais.</p></div>
+        <div className="card"><h3>CONDIÇÃO DE LANÇAMENTO</h3><p className="muted">Quem se pré-agenda recebe a oferta antes de todo mundo.</p></div>
       </section>
 
       <section id="agendar" className="container form-wrap">
