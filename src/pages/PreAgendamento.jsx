@@ -75,6 +75,7 @@ export default function PreAgendamento() {
           <div>
             <span className="tag">Pré-abertura</span>
             <h1>{NOME}</h1>
+            <h2>holaaaa</h2>
             <p className="lead">
               Garanta seu lugar na inauguração{ABERTURA ? <> em <strong>{dateBR(ABERTURA)}</strong></> : null}.
               Agende sua visita, conheça a estrutura e aproveite condições exclusivas de pré-abertura.
